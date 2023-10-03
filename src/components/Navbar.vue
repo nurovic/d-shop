@@ -25,7 +25,7 @@ const route = useRoute();
 const routeNavbarList = ref([
     {routeName: '/', routeTitle: 'Home', id: 1},
     {routeName: '/products', routeTitle: 'Product List', id: 2},
-    {routeName: '/order-card', routeTitle: 'Order Card', id: 2},
+    {routeName: '/order-card', routeTitle: 'Order Card', id: 3  },
 ])
 </script>
 <style lang="">

@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="flex h-[850px]">
+    <div class="flex h-screen">
         <OrderCardList />   
         <OrderCardSummary />
     </div>

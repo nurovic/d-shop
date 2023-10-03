@@ -4,15 +4,12 @@
         <div class="mt-4">
             <div class="font-[700] text-gray-500">Genel Toplam: 22.000.00 ₺</div>
         </div>
-        <div class="flex justify-center font-[800] h-12 rounded-[15px] items-center mt-12 w-full bg-orange-300 text-white ">
+        <div class="flex justify-center hover:bg-orange-500 hover:text-white font-[800] h-12 rounded-[15px] items-center mt-12 w-full bg-orange-300 text-white ">
             Alışverişi Tamamla
         </div>
     </div>
 </template>
-<script>
-export default {
-    
-}
+<script setup>
 </script>
 <style lang="">
     

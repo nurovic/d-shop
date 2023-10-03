@@ -1,6 +1,6 @@
 <template lang="">
     <div
-    class="h-[125px] w-full flex border-2 rounded-[15px] mb-4"
+    class="h-[150px] w-full flex border-2 rounded-[15px] mb-4"
     >
         <div class="w-1/5">
             <img src="@/assets/s.jpg" class="object-cover w-full h-full rounded-[15px]" alt="">

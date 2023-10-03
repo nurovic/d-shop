@@ -12,7 +12,7 @@
                 <div class="font-[600] text-gray-500">22.000₺</div>
                 <div
                 @click.prevent="Add"
-                class="border-2 border-orange-200 cursor-pointer px-4 bg-orange-300 text-white rounded-[8px]"
+                class="border-2 hover:bg-orange-500 hover:text-white border-orange-200 cursor-pointer px-4 bg-orange-300 text-white rounded-[8px]"
                 >Sepete Ekle</div>
             </div>
         </div></router-link>
