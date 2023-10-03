@@ -1,12 +1,12 @@
 <template lang="">
-    <div>
-        Product List View
+    <div class="grid grid-cols-3 gap-x-20 gap-y-8 my-6">
+        <div>
+            <ProductCardItem />
+        </div>
     </div>
 </template>
-<script>
-export default {
-    
-}
+<script setup>
+import ProductCardItem from '../components/ProductCard/ProductCardItem.vue';
 </script>
 <style lang="">
     
