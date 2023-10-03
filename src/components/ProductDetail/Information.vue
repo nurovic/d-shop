@@ -11,17 +11,23 @@
             Royal_Mirage Sport Brown Perfume for Men & Women - 120ml
         </div>
         <div class="flex justify-end mt-12">
-            <div 
-        class="hover:bg-orange-500 hover:text-white bg-orange-300 w-64 text-[25px] text-white text-center rounded-[15px]"
-        >
+            <div
+            @click="addToOrder" 
+            class="hover:bg-orange-500 hover:text-white bg-orange-300 w-64 text-[25px] text-white text-center rounded-[15px]"
+            >
             Sepete Ekle
         </div>
         </div>
     </div>
 </template>
-<script>
-export default {
-    
+<script setup>
+import {useToast} from 'vue-toast-notification';
+
+const toast = useToast()
+const addToOrder = () => {
+    toast.success('You did it!', {
+        position: 'top-right'
+    });
 }
 </script>
 <style lang="">
