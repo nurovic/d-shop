@@ -21,9 +21,8 @@ import ProductCardItem from '../components/ProductCard/ProductCardItem.vue';
 const ProductList = computed(() => {
     return store.state?.product?.productList?.data?.products
 })
-console.log(store.state?.product?.productList?.data?.products)
 onMounted(() => {
-    store.dispatch('product/getPeoducts')
+    store.dispatch('product/getProducts')
 
 })
 </script>
