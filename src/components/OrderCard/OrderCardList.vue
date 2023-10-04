@@ -1,5 +1,10 @@
 <template lang="">
     <div class="h-[80%] border-2 overflow-y-auto border-gray-100 rounded-[15px] p-4 w-2/3">
+        <div
+        v-if="OrderCardList.length == 0"
+        > 
+            Sepette Ürününüz Bulunmamaktadır.
+        </div>
         <div 
         v-for="orderCard in OrderCardList"
         >

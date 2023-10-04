@@ -4,7 +4,9 @@
         <div class="mt-4">
             <div class="font-[700] text-gray-500">Genel Toplam: {{orderCalculate?.price?.toLocaleString('tr')}}   ₺</div>
         </div>
-        <div class="flex justify-center hover:bg-orange-500 hover:text-white font-[800] h-12 rounded-[15px] items-center mt-12 w-full bg-orange-300 text-white ">
+        <div 
+        @click="handleCompleteOrder"
+        class="flex justify-center hover:bg-orange-500 hover:text-white font-[800] h-12 rounded-[15px] items-center mt-12 w-full bg-orange-300 text-white ">
             Alışverişi Tamamla
         </div>
     </div>
@@ -13,8 +15,12 @@
 import {computed }from 'vue'
 import store from '../../store';
 const orderCalculate = computed(() => {
-return store?.getters['orderCard/getOrderCardCal']
+    return store?.getters['orderCard/getOrderCardCal']
 })
+
+const handleCompleteOrder = () => {
+    store.commit('orderCard/CLEAR_ORDER_CARD')
+}
 </script>
 <style lang="">
     

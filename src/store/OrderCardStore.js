@@ -42,6 +42,13 @@ export default {
                 })
             } 
             localStorage.setItem("orderCard", JSON.stringify(state.orderCardList))
+        },
+        CLEAR_ORDER_CARD(state){
+            localStorage.clear();
+            toast.success("Siparişiniz Onaylanmıştır.", {
+                position:'top-right'
+            })
+            state.orderCardList = []
         }
     },
     actions: {},
