@@ -21,13 +21,9 @@
     </div>
 </template>
 <script setup>
-import {useToast} from 'vue-toast-notification';
-
-const toast = useToast()
+import store from '../../store'
 const addToOrder = () => {
-    toast.success('You did it!', {
-        position: 'top-right'
-    });
+
 }
 </script>
 <style lang="">
