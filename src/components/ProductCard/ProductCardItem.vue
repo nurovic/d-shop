@@ -12,7 +12,7 @@
             <div class="flex justify-between">
                 <div class="font-[700] text-[18px] text-gray-500">{{props.item.price.toLocaleString('tr')}} ₺</div>
                 <div
-                @click.prevent="Add"
+                @click.prevent="addToOrder(props.item)"
                 class="border-2 hover:bg-orange-500 hover:text-white border-orange-200 cursor-pointer px-4 bg-orange-300 text-white rounded-[8px]"
                 >Sepete Ekle</div>
             </div>
@@ -20,7 +20,10 @@
     </div>
 </template>
 <script setup>
-
+import store from '../../store'
+const addToOrder = (item) => {
+    store.commit('orderCard/ADD_TO_CARD', item)
+}
 const props = defineProps({
     item: {},
 });

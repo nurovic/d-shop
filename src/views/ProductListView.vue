@@ -8,8 +8,6 @@
             :key="item.id"
             />
         </div>
-
-        {{ProductList}}
     </div>
 </template>
 <script setup>
